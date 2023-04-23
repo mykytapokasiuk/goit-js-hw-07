@@ -42,3 +42,49 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalbox {
+  padding: 25px;
+  text-align: center;
+  background-color: brown;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.modal_btn {
+  width: 100px;
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #4D5AE5;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: transform 500ms ease-in-out;
+}
+
+.modal_btn:hover {
+  background-color: #2f39a8;
+  transform: scale(1.05);
+}
+
+.modal_btn.modalok_btn {
+  margin-right: 15px;
+}

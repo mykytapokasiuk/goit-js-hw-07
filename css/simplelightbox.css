@@ -1,0 +1,11 @@
+.sl-image {
+    padding: 2px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sl-caption {
+    border: 2px solid black;
+    border-radius: 5px;
+}
