@@ -1,14 +1,11 @@
 <h1 align="center">Welcome to goit-js-hw-07 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/Nick-ZAP/the-ham-theme#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
 </p>
 
 > Goit-js-hw-07 project
 
-### 🏠 [Homepage](https://github.com/Nick-ZAP/the-ham-theme#readme)
+### 🏠 [Homepage](https://mykytapokasiuk.github.io/goit-js-hw-07/index.html)
 
 ## Built with
 
