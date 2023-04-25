@@ -51,17 +51,10 @@ const onEscPress = (event) => {
     }
 };
 /**
- * Removes event listener from window
- */
-const onCloseModal = () => {
-    window.removeEventListener("keydown", onEscPress);
-};
-/**
  * Opens modal window with large image, checks if right target was clicked
  * @param {event} event
  */
 const onOpenModal = (event) => {
-    window.addEventListener("keydown", onEscPress);
     if (event.target.nodeName !== "IMG") {
         return;
     }
@@ -70,7 +63,12 @@ const onOpenModal = (event) => {
 		<img width="1400" height="900" src=${variables.largeImageUrl}>
 	`,
         {
-            onClose: onCloseModal,
+            onShow: () => {
+                window.addEventListener("keydown", onEscPress);
+            },
+            onClose: () => {
+                window.removeEventListener("keydown", onEscPress);
+            },
         }
     );
     variables.instance.show();
